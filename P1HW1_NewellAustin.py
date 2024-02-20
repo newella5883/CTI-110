@@ -16,7 +16,7 @@ print('And', user_int, 'Cubed is', user_int ** 3, '!!')
 
 user_int2 = int(input('Enter another integer:\n'))
 
-print('4 +', user_int2, 'is', user_int2 + 4)
+print(user_int, '+', user_int2, 'is', user_int2 + user_int)
 
-print('4 *', user_int2, 'is', user_int2 * 4)
+print(user_int, '*', user_int2, 'is', user_int2 * user_int)
 
