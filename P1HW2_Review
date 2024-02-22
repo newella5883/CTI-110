@@ -1,0 +1,40 @@
+#Name
+#Date
+#Input/Output Review
+
+'''
+get item
+get price
+do this three times
+
+calculate subtotal
+get tax rate as percentage
+calculate tax as decimal
+calculate tax amount
+display subtotal
+display tax amount
+display grand total
+'''
+
+item1 = input("What was the first item? ")
+price1 = float(input("How much is the " + item1))
+
+item2 = (input("what was the second item? "))
+price2 = float(input("How much is the " + item2))
+
+item3 = input("What was the third item? ")
+price3 = float(input("How much is the " + item3))
+
+subtotal = price1 + price2 +price3
+#print(subtotal)
+
+tax_rate = float(input("Enter the tax percentage without %: "))
+tax_rate = tax_rate/100
+
+tax_amount = tax_rate * subtotal
+
+total = subtotal + tax_amount
+
+print("Subtotal:", subtotal)
+print("Tax", format(tax_amount, ".2f"))
+print("Total:", format(total, ".2f"))
